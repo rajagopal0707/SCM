@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>New Joiner Registration Page for Accenture</title>
+<script type="text/javascript">
+function myvalidate()
+{
+var a=document.getElementById("nam");
+if(a.value=="")
+alert("Please enter an value for name");
+else
+alert("Welcome"+a.value);
+var b=document.getElementById("dob");
+if(b.value=="")
+alert("Please enter an value for date of birth");
+else
+alert("Your date of birth is"+b.value);
+var c=document.getElementById("addr");
+if(c.value=="")
+alert("Please enter your address");
+else
+alert("Good");
+var d=document.getElementById("mar");
+if(d.value=="")
+alert("Please enter your marital status");
+else
+alert("good");
+}
+</script>
+</head>
+<body>
+<form name="pk" action="">
+Enter your name:<input type="text" id="nam"><br>
+Enter your dob:&nbsp&nbsp<input type="date" id="dob"><br>
+Address<input type="textarea" size="300" id="addr"><br>
+<input type="radio" name="rrr" value="Male">Male<br>
+<input type="radio" name="rrr" value="Female">Female<br>
+Marital status
+<select name="marital" id="mar">
+<option>Married</option>
+<option>Unmarried</option>
+<option>Widow</option>
+</select>
+Designation:
+<input type="checkbox" checked>ASE<input type="checkbox" checked>SSE<br>
+Relevant experience:<input type="textarea" size="400">
+<input type="submit" value="Submit" onclick="myvalidate()">
+<input type="reset" value="Clear">
+</form>
+</html>
